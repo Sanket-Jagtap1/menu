@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <title>Hello, world!</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cuprum'serif;
+            background: rgb(236, 236, 236);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        span {
+            font-family: Exo\ 2, sans-serif;
+        }
+
+        #menu .card-content {
+
+            border-radius: 10px;
+        }
+
+        #menu .img-box {
+            width: 100%;
+            height: 160px;
+            border-radius: 10px 10px 0px 0px;
+            overflow: hidden;
+        }
+
+        #menu .img-box img {
+            width: 100%;
+            height: 160px;
+
+        }
+
+        #menu small {
+            position: relative;
+            bottom: 6px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+   
+
+
+
+
+
+
+
+
+
+    <!-- menu section start -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <div class="col-12 text-center">
+                <h2>Menu</h2>
+            </div>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary rounded-0 d-block d-md-none mx-auto sticky-top" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Menus
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <nav>
+                <div class="nav nav-tabs d-flex flex-column" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Veg</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Non-veg</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Starter</button>
+                </div>
+              </nav>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <div class="nav nav-tabs d-none d-md-flex justify-content-center" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Veg</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Non-veg</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Starter</button>
+    </div>
+  </nav>
+
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+         <!-- veg menu start -->
+         <div class="col-12">
+            <h2>Veg</h2>
+        </div>
+        <div class="row g-4 py-3" id="veg"></div>
+        <!-- veg menu end -->
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <!-- nonveg menu start -->
+        <div class="col-12">
+            <h2>Non-veg</h2>
+        </div>
+        <div class="row g-4 py-3" id="nonveg">
+        </div>
+        <!-- nonveg menu end -->
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">strater</div>
+  </div>
+
+
+            
+            
+           
+        </div>
+    </section>
+    <!-- menu section end -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
